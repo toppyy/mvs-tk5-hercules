@@ -1,0 +1,10 @@
+services:
+  mvs:
+    build: .
+    volumes:
+      - mvsdata:/tk5/dasd
+    ports:
+      - "3270:3270"
+      - "8038:8038"
+volumes:
+  mvsdata:
